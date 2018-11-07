@@ -307,12 +307,13 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
     font-family: 'nasalizationregular';
     text-transform: uppercase;
-    font-size: 32px; }
+    font-size: 32px;
+    margin-bottom: 30px; }
     .container header.top-slide span {
       background: -webkit-linear-gradient(#606c88, #3f4c6b);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      text-shadow: 0px 0px 30px #606c88; }
+      text-shadow: 0px 0px 10px #606c88; }
     .container header.top-slide i {
       color: #3f4c6b; }
   .container table {
@@ -388,12 +389,15 @@ h1, h2, h3, h4, h5, h6 {
   .badge.warning {
     background-color: #ffae00; }
 
-.text-left {
-  text-align: left !important; }
-
 .bg-cover {
   width: 200px;
   height: 200px; }
+
+.text-left {
+  text-align: left !important; }
+
+.width-100 {
+  width: 100% !important; }
 
 .logotype, .intro h2 {
   color: #606c88;
@@ -424,5 +428,52 @@ h1, h2, h3, h4, h5, h6 {
 .intro h6 {
   font-size: 28px; }
 
-.section-geek {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/stars-min.png), radial-gradient(circle at center, #351215 10%, #07131E 100%); }
+.grid-teams .nav-team {
+  padding: 8px;
+  padding-bottom: 0;
+  border: 2px solid #606c88;
+  box-shadow: 0px 0px 10px #606c88;
+  text-align: left; }
+
+.grid-teams figure, .grid-teams .member-info {
+  display: inline-block; }
+
+.grid-teams .member:not(:first-child) {
+  margin-top: 10px; }
+
+.grid-teams .member-info {
+  vertical-align: top;
+  padding-top: 5px; }
+  .grid-teams .member-info h4, .grid-teams .member-info p {
+    margin: 0; }
+  .grid-teams .member-info h4 {
+    font-size: 20px;
+    color: #606c88;
+    line-height: 1; }
+  .grid-teams .member-info p {
+    font-size: 16px;
+    color: #3f4c6b; }
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.team {
+  width: 24.5%;
+  padding: 10px;
+  display: inline-block; }
+  .team header {
+    background-color: #606c88;
+    box-shadow: 0px 0px 10px #606c88;
+    color: white;
+    font-size: 22px;
+    padding-top: 12px;
+    font-family: 'nasalizationregular';
+    text-transform: uppercase; }
