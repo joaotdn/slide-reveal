@@ -3,6 +3,7 @@
  *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
+@import url(../../../lib/font/fonts/geeks.css);
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
 .reveal a {
@@ -278,3 +279,7 @@ body {
 @media print {
   .backgrounds {
     background-color: #f7fbfc; } }
+
+/*********************************************
+ * PRINT BACKGROUND
+ *********************************************/

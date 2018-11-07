@@ -2,6 +2,7 @@
  * Solarized Light theme for reveal.js.
  * Author: Achim Staebler
  */
+@import url(../../../lib/font/fonts/geeks.css);
 @import url(../../lib/font/league-gothic/league-gothic.css);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 /**
@@ -275,3 +276,7 @@ body {
 @media print {
   .backgrounds {
     background-color: #fdf6e3; } }
+
+/*********************************************
+ * PRINT BACKGROUND
+ *********************************************/

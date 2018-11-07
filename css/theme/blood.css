@@ -9,6 +9,7 @@
  * For other themes, change $codeBackground accordingly.
  *
  */
+@import url(../../../lib/font/fonts/geeks.css);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,700,300italic,700italic);
 /*********************************************
  * GLOBAL STYLES
@@ -275,6 +276,9 @@ body {
   .backgrounds {
     background-color: #222; } }
 
+/*********************************************
+ * PRINT BACKGROUND
+ *********************************************/
 .reveal p {
   font-weight: 300;
   text-shadow: 1px 1px #222; }

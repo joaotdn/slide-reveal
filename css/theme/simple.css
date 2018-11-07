@@ -5,8 +5,10 @@
  * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
  * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
+@import url(../../../lib/font/fonts/geeks.css);
 @import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url(../../../lib/font/fonts/geeks.css);
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
   color: #fff; }
 
@@ -49,7 +51,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #000;
-  font-family: "News Cycle", Impact, sans-serif;
+  font-family: "nasalizationregular", Impact, sans-serif;
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: normal;
@@ -212,20 +214,20 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #00008B;
+  color: #606c88;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   transition: color .15s ease; }
 
 .reveal a:hover {
-  color: #0000f1;
+  color: #98a1b6;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #00003f; }
+  background: #40485b; }
 
 /*********************************************
  * IMAGES
@@ -247,21 +249,21 @@ body {
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #00008B;
+  border-color: #606c88;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  color: #00008B; }
+  color: #606c88; }
 
 /*********************************************
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
-  color: #00008B; }
+  color: #606c88; }
 
 .reveal .progress span {
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
@@ -274,3 +276,153 @@ body {
 @media print {
   .backgrounds {
     background-color: #fff; } }
+
+/*********************************************
+ * PRINT BACKGROUND
+ *********************************************/
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'nasalizationregular'; }
+
+.container {
+  width: 100%; }
+  .container header.top-table {
+    width: 100%;
+    padding: 16px 0 10px 0;
+    color: white;
+    background-color: #606c88;
+    border-radius: 4px;
+    text-align: left;
+    box-shadow: 0px 0px 30px #606c88;
+    font-size: 22px;
+    font-family: 'nasalizationregular';
+    text-transform: uppercase; }
+    .container header.top-table span {
+      display: inline-block;
+      margin-left: 10px; }
+  .container header.top-slide {
+    color: #606c88;
+    width: 100%;
+    padding: 16px 0 10px 0;
+    border-radius: 4px;
+    text-align: left;
+    font-family: 'nasalizationregular';
+    text-transform: uppercase;
+    font-size: 32px; }
+    .container header.top-slide span {
+      background: -webkit-linear-gradient(#606c88, #3f4c6b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0px 0px 30px #606c88; }
+    .container header.top-slide i {
+      color: #3f4c6b; }
+  .container table {
+    margin-top: 16px;
+    width: 100%;
+    display: inline-block; }
+  .container tbody {
+    font-size: 16px !important;
+    font-weight: 300; }
+    .container tbody th {
+      text-align: center; }
+  .container thead {
+    color: #606c88;
+    font-family: 'nasalizationregular';
+    font-size: 24.2px !important;
+    background: -webkit-linear-gradient(#606c88, #3f4c6b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 30px #606c88; }
+    .container thead th {
+      padding-bottom: 10px; }
+  .container .table {
+    width: 100%;
+    display: table;
+    font-size: 16px; }
+    .container .table span {
+      display: inline-block;
+      width: 12%; }
+      .container .table span.otd, .container .table span.ftr {
+        width: 6%; }
+      .container .table span.produto {
+        width: 10%; }
+      .container .table span.sprint {
+        width: 8%; }
+      .container .table span.status {
+        width: 8%; }
+      .container .table span.titulo {
+        width: 32%; }
+      .container .table span.trabalhado {
+        width: 14%; }
+      .container .table span.sprint {
+        width: 10%; }
+  .container .table-thead {
+    margin-top: 16px;
+    text-transform: uppercase; }
+    .container .table-thead span {
+      font-family: 'nasalizationregular';
+      background: -webkit-linear-gradient(#606c88, #3f4c6b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0px 0px 30px #606c88; }
+  .container .table-body {
+    margin-top: 16px; }
+    .container .table-body span {
+      vertical-align: middle; }
+  .container .row {
+    width: 100%;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-bottom: 1px solid #606c88; }
+
+.badge {
+  display: inline-block;
+  width: 20px !important;
+  height: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
+  .badge.alert {
+    background-color: #dc322f; }
+  .badge.success {
+    background-color: #3adb76; }
+  .badge.warning {
+    background-color: #ffae00; }
+
+.text-left {
+  text-align: left !important; }
+
+.bg-cover {
+  width: 200px;
+  height: 200px; }
+
+.logotype, .intro h2 {
+  color: #606c88;
+  font-family: 'sf_viper_squadronregular';
+  text-shadow: 0px 0px 30px #606c88;
+  line-height: 1.4;
+  margin: 0;
+  background: -webkit-linear-gradient(#606c88, #3f4c6b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.intro h4 {
+  color: #606c88;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(#606c88, #3f4c6b);
+  text-shadow: 0px 0px 30px #606c88;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.intro h5, .intro h6 {
+  color: #3f4c6b; }
+
+.intro h5 {
+  color: #606c88;
+  font-size: 32px;
+  margin-top: 5rem; }
+
+.intro h6 {
+  font-size: 28px; }
+
+.section-geek {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/stars-min.png), radial-gradient(circle at center, #351215 10%, #07131E 100%); }

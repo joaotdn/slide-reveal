@@ -35,9 +35,9 @@ html {
 	display: none !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	text-shadow: 0 0 0 #000 !important;
-}
+/*h1, h2, h3, h4, h5, h6 {*/
+	/*text-shadow: 0 0 0 #000 !important;*/
+/*}*/
 
 .reveal pre code {
 	overflow: hidden !important;
@@ -161,4 +161,15 @@ ul, ol, div, p {
 	display: block;
 	position: absolute;
 	font-size: 14px;
+}
+
+h2.logotype {
+	color: rgb(225, 69, 38);
+	font-family: 'sf_viper_squadronregular';
+	text-shadow: 0px 0px 30px rgb(225, 69, 38);
+	line-height: 1.4;
+	margin: 0;
+	background: -webkit-linear-gradient(rgb(225, 69, 38), rgb(89, 8, 0));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }

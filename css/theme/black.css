@@ -3,6 +3,7 @@
  *
  * By Hakim El Hattab, http://hakim.se
  */
+@import url(../../../lib/font/fonts/geeks.css);
 @import url(../../lib/font/source-sans-pro/source-sans-pro.css);
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }
@@ -271,3 +272,7 @@ body {
 @media print {
   .backgrounds {
     background-color: #222; } }
+
+/*********************************************
+ * PRINT BACKGROUND
+ *********************************************/

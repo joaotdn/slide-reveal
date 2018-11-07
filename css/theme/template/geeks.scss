@@ -1,0 +1,209 @@
+@import url(../../../lib/font/fonts/geeks.css);
+
+$col-secondary: rgba(96,108,136,1);
+$col-darken: rgba(63,76,107,1);
+
+// BASES
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'nasalizationregular';
+}
+
+.container {
+  width: 100%;
+  header {
+    &.top-table {
+      width: 100%;
+      padding: 16px 0 10px 0;
+      color: white;
+      background-color: $col-secondary;
+      border-radius: 4px;
+      text-align: left;
+      box-shadow: 0px 0px 30px $col-secondary;
+      font-size: 22px;
+      font-family: 'nasalizationregular';
+      text-transform: uppercase;
+
+      span {
+        display: inline-block;
+        margin-left: 10px;
+      }
+    }
+
+    &.top-slide {
+      color: $col-secondary;
+      width: 100%;
+      padding: 16px 0 10px 0;
+      border-radius: 4px;
+      text-align: left;
+      font-family: 'nasalizationregular';
+      text-transform: uppercase;
+      font-size: 32px;
+
+      span {
+        background: -webkit-linear-gradient($col-secondary, $col-darken);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0px 0px 30px $col-secondary;
+      }
+
+      i {
+        color: $col-darken;
+      }
+    }
+  }
+
+  table {
+    margin-top: 16px;
+    width: 100%;
+    display: inline-block;
+  }
+
+  tbody {
+    font-size: 16px !important;
+    font-weight: 300;
+    th {
+      text-align: center;
+    }
+  }
+
+  thead {
+    color: $col-secondary;
+    font-family: 'nasalizationregular';
+    font-size: 24.2px !important;
+    background: -webkit-linear-gradient($col-secondary, $col-darken);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 30px $col-secondary;
+    th {
+      padding-bottom: 10px;
+    }
+  }
+
+  .table {
+    width: 100%;
+    display: table;
+    font-size: 16px;
+
+    span {
+      display: inline-block;
+      width: 12%;
+
+      &.otd, &.ftr {
+        width: 6%;
+      }
+      &.produto {
+        width: 10%;
+      }
+      &.sprint {
+        width: 8%;
+      }
+      &.status {
+        width: 8%;
+      }
+      &.titulo {
+        width: 32%;
+      }
+      &.trabalhado {
+        width: 14%;
+      }
+      &.sprint {
+        width: 10%;
+      }
+    }
+  }
+
+  .table-thead {
+    margin-top: 16px;
+    text-transform: uppercase;
+
+    span {
+      font-family: 'nasalizationregular';
+      background: -webkit-linear-gradient($col-secondary, $col-darken);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0px 0px 30px $col-secondary;
+    }
+  }
+
+  .table-body {
+    margin-top: 16px;
+    span {
+      vertical-align: middle;
+    }
+  }
+
+  .row {
+    width: 100%;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-bottom: 1px solid $col-secondary;
+  }
+}
+
+.badge {
+  display: inline-block;
+  width: 20px !important;
+  height: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  &.alert {
+    background-color: #dc322f;
+  }
+  &.success {
+    background-color: #3adb76;
+  }
+  &.warning {
+    background-color: #ffae00;
+  }
+}
+
+.text-left {
+  text-align: left !important;
+}
+// UTILS
+.bg-cover {
+  width: 200px;
+  height: 200px;
+}
+
+.logotype {
+  color: $col-secondary;
+  font-family: 'sf_viper_squadronregular';
+  text-shadow: 0px 0px 30px $col-secondary;
+  line-height: 1.4;
+  margin: 0;
+  background: -webkit-linear-gradient($col-secondary, $col-darken);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// SECTIONS
+.intro {
+  h2 {
+    @extend .logotype;
+  }
+  h4 {
+    color: $col-secondary;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient($col-secondary, $col-darken);
+    text-shadow: 0px 0px 30px $col-secondary;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  h5, h6 {
+    color: $col-darken;
+  }
+  h5 {
+    color: $col-secondary;
+    font-size: 32px;
+    margin-top: 5rem;
+  }
+  h6 {
+    font-size: 28px;
+  }
+}
+.section-geek {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/stars-min.png), radial-gradient(circle at center, #351215 10%, #07131E 100%);
+}

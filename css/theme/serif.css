@@ -4,6 +4,7 @@
  *
  * This theme is Copyright (C) 2012-2013 Owen Versteeg, http://owenversteeg.com - it is MIT licensed.
  */
+@import url(../../../lib/font/fonts/geeks.css);
 .reveal a {
   line-height: 1.3em; }
 
@@ -271,3 +272,7 @@ body {
 @media print {
   .backgrounds {
     background-color: #F0F1EB; } }
+
+/*********************************************
+ * PRINT BACKGROUND
+ *********************************************/
