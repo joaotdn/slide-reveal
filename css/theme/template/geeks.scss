@@ -50,6 +50,43 @@ h1, h2, h3, h4, h5, h6 {
       i {
         color: $col-darken;
       }
+
+      ul {
+        float: right;
+        list-style: none;
+        li {
+          display: inline-block;
+          font-size: 14px;
+        }
+        i {
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          margin-right: 5px;
+
+          &.desligado {
+            background-color: #dc322f;
+          }
+          &.ferias {
+            background-color: #ffae00;
+          }
+          &.formacao {
+            background-color: #1b91ff;
+          }
+          &.saopaulo {
+            background-color: green;
+          }
+          &.lider {
+            background-color: $col-secondary;
+          }
+          &.emprestado {
+            background-color: #6c71c4;
+          }
+        }
+      }
     }
   }
 

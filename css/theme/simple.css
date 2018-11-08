@@ -316,6 +316,32 @@ h1, h2, h3, h4, h5, h6 {
       text-shadow: 0px 0px 10px #606c88; }
     .container header.top-slide i {
       color: #3f4c6b; }
+    .container header.top-slide ul {
+      float: right;
+      list-style: none; }
+      .container header.top-slide ul li {
+        display: inline-block;
+        font-size: 14px; }
+      .container header.top-slide ul i {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        margin-right: 5px; }
+        .container header.top-slide ul i.desligado {
+          background-color: #dc322f; }
+        .container header.top-slide ul i.ferias {
+          background-color: #ffae00; }
+        .container header.top-slide ul i.formacao {
+          background-color: #1b91ff; }
+        .container header.top-slide ul i.saopaulo {
+          background-color: green; }
+        .container header.top-slide ul i.lider {
+          background-color: #606c88; }
+        .container header.top-slide ul i.emprestado {
+          background-color: #6c71c4; }
   .container table {
     margin-top: 16px;
     width: 100%;
