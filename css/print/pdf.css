@@ -164,12 +164,12 @@ ul, ol, div, p {
 }
 
 h2.logotype {
-	color: rgb(225, 69, 38);
+	color: #606C88;
 	font-family: 'sf_viper_squadronregular';
-	text-shadow: 0px 0px 30px rgb(225, 69, 38);
+	text-shadow: 0px 0px 30px #606C88;
 	line-height: 1.4;
 	margin: 0;
-	background: -webkit-linear-gradient(rgb(225, 69, 38), rgb(89, 8, 0));
+	background: -webkit-linear-gradient(#606C88, #3F4C6B);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }

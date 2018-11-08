@@ -35,12 +35,12 @@ h1, h2, h3, h4, h5, h6 {
       padding: 16px 0 10px 0;
       border-radius: 4px;
       text-align: left;
-      font-family: 'nasalizationregular';
       text-transform: uppercase;
       font-size: 32px;
       margin-bottom: 30px;
 
       span {
+        font-family: 'nasalizationregular';
         background: -webkit-linear-gradient($col-secondary, $col-darken);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -49,6 +49,9 @@ h1, h2, h3, h4, h5, h6 {
 
       i {
         color: $col-darken;
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0px 0px 0px $col-secondary;
       }
 
       ul {
@@ -56,12 +59,12 @@ h1, h2, h3, h4, h5, h6 {
         list-style: none;
         li {
           display: inline-block;
-          font-size: 14px;
+          font-size: 12px;
         }
         i {
           display: inline-block;
-          width: 16px;
-          height: 16px;
+          width: 10px;
+          height: 10px;
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
           border-radius: 50%;
@@ -251,7 +254,6 @@ h1, h2, h3, h4, h5, h6 {
 .grid-teams {
   .nav-team {
     padding: 8px;
-    padding-bottom: 0;
     border: 2px solid $col-secondary;
     box-shadow: 0px 0px 10px $col-secondary;
     text-align: left;
@@ -261,7 +263,73 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
   }
 
+  .avatar {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 2px solid white;
+    position: relative;
+
+    i {
+      position: absolute;
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      bottom: 0;
+      right: 0;
+      border-radius: 50%;
+      background-color: transparent;
+    }
+
+    &.desligado {
+      border-color: #dc322f;
+      i {
+        background-color: #dc322f;
+      }
+    }
+    &.ferias {
+      border-color: #ffae00;
+      i {
+        background-color: #ffae00;
+      }
+    }
+    &.formacao {
+      border-color: #1b91ff;
+      i {
+        background-color: #1b91ff;
+      }
+    }
+    &.saopaulo {
+      border-color: green;
+      i {
+        background-color: green;
+      }
+    }
+    &.lider {
+      border-color: $col-secondary;
+      i {
+        background-color: $col-secondary;
+      }
+    }
+    &.emprestado {
+      border-color: #6c71c4;
+      i {
+        background-color: #6c71c4;
+      }
+    }
+  }
+
+
   .member {
+    width: 19%;
+    display: inline-block;
+
     &:not(:first-child) {
       margin-top: 10px;
     }
@@ -276,8 +344,10 @@ h1, h2, h3, h4, h5, h6 {
     }
     h4 {
       font-size: 20px;
+      font-weight: 700;
       color: $col-secondary;
       line-height: 1;
+      font-family: "Lato", sans-serif;
     }
     p {
       font-size: 16px;
@@ -285,23 +355,13 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 }
-
-.avatar {
-  width: 50px;
-  height: 50px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
 .team {
-  width: 24.5%;
   padding: 10px;
   display: inline-block;
+
+  &:nth-child(even) {
+    margin-top: 30px;
+  }
 
   header {
     background-color: $col-secondary;
@@ -311,5 +371,177 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 12px;
     font-family: 'nasalizationregular';
     text-transform: uppercase;
+  }
+}
+
+// demanda por funcionario
+.container {
+  .top-member {
+    padding: 20px 30px;
+    background-color: rgba($col-secondary, .2);
+    //border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 30px rgba($col-secondary, .3);
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+
+    .avatar {
+      width: 140px;
+      height: 140px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: relative;
+      z-index: 1;
+      border: 2px solid white;
+      float: left;
+    }
+  }
+  .top-member-info {
+    float: right;
+    width: 85%;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 2px;
+      position: absolute;
+      height: 50%;
+      top: 25%;
+      left: 0;
+      background-color: $col-secondary;
+    }
+
+    > div {
+      display: inline-block;
+      &.member-title {
+        width: 25%;
+      }
+      &.member-chart {
+        width: 35%;
+        text-align: center;
+      }
+      &.member-skills {
+        width: 38%;
+        vertical-align: top;
+        text-align: left;
+      }
+      &.member-title {
+        padding-top: 40px;
+        text-align: left;
+      }
+    }
+  }
+
+  .member-skills {
+    header {
+      text-transform: uppercase;
+      font-size: 18px;
+      color: $col-secondary;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba($col-secondary, .4);
+      margin-bottom: 10px;
+    }
+  }
+
+  .list-skills {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    -webkit-column-rule: 1px solid transparent;
+    -moz-column-rule: 1px solid transparent;
+    column-rule: 1px solid transparent;
+
+    p {
+      opacity: 1;
+    }
+  }
+
+  h4 {
+    font-size: 24px;
+    color: $col-secondary;
+    margin: 0;
+    line-height: 1;
+  }
+  p {
+    margin: 0;
+    color: $col-darken;
+    font-size: 14px;
+    text-transform: uppercase;
+    opacity: .6;
+    line-height: 2;
+
+    &.small {
+      font-size: 10px;
+    }
+  }
+
+  .pie {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #eee;
+    background-image: linear-gradient(to right, transparent 50%, $col-secondary 0);
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+
+    span {
+      position: absolute;
+      left: -6px;
+      bottom: -27px;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: $col-secondary;
+      opacity: .8;
+    }
+  }
+
+  .pie::before {
+    content: '';
+    display: block;
+    margin-left: 50%;
+    height: 100%;
+    border-radius: 0 100% 100% 0 / 50%;
+    background-color: inherit;
+    transform-origin: left;
+  }
+
+  .pie::after {
+    content: attr(data-value);
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    font-size: 20px;
+    line-height: 52px;
+  }
+
+  @for $i from 0 through 50 {
+    .pie[data-value="#{$i}"]:before {
+      transform: rotate(#{$i/100}turn);
+    }
+  }
+
+  @for $i from 51 through 100 {
+    .pie[data-value="#{$i}"]:before {
+      background-color: $col-secondary;
+      transform: rotate(#{$i/100 - .5}turn);
+    }
   }
 }
